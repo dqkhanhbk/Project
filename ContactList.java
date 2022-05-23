@@ -29,9 +29,9 @@ public class ContactList {
 	
 	public void removeContact() {
 		System.out.print("Delete by (1-name, 2-email, 3-phone): ");
-		int xoa = Integer.parseInt(sc.nextLine());
+		int delete = Integer.parseInt(sc.nextLine());
 		int index = -1; //Find the position to delete
-		if (xoa == 1) {
+		if (delete == 1) {
 			System.out.print("Input name: ");
 			String name = sc.nextLine();
 			for (int i = 0; i < list.size(); i++) {
@@ -41,7 +41,7 @@ public class ContactList {
 				}
 			}
 		}
-		else if (xoa == 2) {
+		else if (delete == 2) {
 			System.out.print("Input email: ");
 			String email = sc.nextLine();
 			for (int i = 0; i < list.size(); i++) {
@@ -51,7 +51,7 @@ public class ContactList {
 				}
 			}
 		}
-		else if (xoa == 3) {
+		else if (delete == 3) {
 			System.out.print("Input phone Number: ");
 			String phone = sc.nextLine();
 			for (int i = 0; i < list.size(); i++) {
